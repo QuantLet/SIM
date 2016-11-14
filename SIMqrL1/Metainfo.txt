@@ -1,0 +1,37 @@
+Name of Quantlet: SIMqrL1
+
+Published in: Composite Quantile Regression for the Single-Index Model
+
+Description: 'In this part of our simulation we adopt our methodology in
+quantile regression with (high dimensional) single index model case. Firstly we
+generate the initial value of the parameter beta by using Li, Y. and Zhu, J.
+(2008)'s L1 norm quantile regression function. Then we run a two-step iteration.
+For the first step of the iteration we use local polynomial regression to
+estimate the link function and its first derivative. For the second step of the
+iteration we apply Li and Zhu's L1 norm quantile regression function again to
+estimate the parameter beta. This two two-step procedure iterates many times
+until the rate of convergence achieves. Then we input this final estimated beta
+into the local polynomial function again to calculate the final link function.
+The performance of the final estimated beta can be evaluated by three criteria:
+dev, acc and angle. The performance of the final estimated link function can be
+evaluated by two criteria: err and ase. For the bandwidth selection we adopt Yu,
+K. and Jones, M. C. (1998)'s methodology.'
+
+Keywords: 'L1-norm penalty, MACE, dimension-reduction, lasso, local polynomial,
+quantile regression, single index model, variable selection'
+
+Author: Weining Wang, Lining Yu
+
+See also: quantilelasso
+
+Submitted:  November 14 2016 by Lining Yu
+
+Input: 'xx  pxn - covariate matrix,  nsimu  - scalar number of simulation, tau
+- scalar quantile level, y  n - response vector, beta_in  p - the initial value
+of the parameter beta'
+
+Output: 'beta_final  p - the final estimated parameter beta, g_finaln  - the
+final estimated link function, indexfinal  p - the final estimated index'
+
+Example: 'plot the true link function (black) and the estimated link
+function (red)'
