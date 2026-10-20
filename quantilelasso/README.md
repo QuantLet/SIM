@@ -11,7 +11,7 @@ Published in: L1-Norm Quantile Regression
 
 Description: L1-norm quantile regression is applied
 
-Keywords: Effective dimension, L1-norm penalty, LASSO, Linear programming,
+Keywords: Effective dimension, L1-norm penalty, LASSO, Linear programming, variable selection
 
 Author: Youjuan Li, Ji Zhu
 
